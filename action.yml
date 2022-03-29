@@ -37,11 +37,11 @@ runs:
         SERVERCHAN_KEY: ${{ inputs.serverchan_key }}
         PUSHPLUS_TOKEN: ${{ inputs.pushplus_token }}
       env:
-        USERNAME: ${{ inputs.username1 }}
-        PASSWORD: ${{ inputs.password1 }}
-        DINGTALK_TOKEN: ${{ inputs.dingtalk_token1 }}
-        SERVERCHAN_KEY: ${{ inputs.serverchan_key1 }}
-        PUSHPLUS_TOKEN: ${{ inputs.pushplus_token1 }} 
+        USERNAME1: ${{ inputs.username }}
+        PASSWORD1: ${{ inputs.password }}
+        DINGTALK_TOKEN1: ${{ inputs.dingtalk_token }}
+        SERVERCHAN_KEY1: ${{ inputs.serverchan_key }}
+        PUSHPLUS_TOKEN: ${{ inputs.pushplus_token }} 
       run: |
         cd ${{ github.action_path }}
         pip install -r ./requirements.txt
